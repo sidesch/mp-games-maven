@@ -3,6 +3,7 @@ package edu.grinnell.csc207;
 import edu.grinnell.csc207.util.CoordinateOutOfBoundsException;
 import edu.grinnell.csc207.util.MatrixV0;
 import java.util.Random;
+import java.util.TimerTask;
 
 /**
  * Game board for snake game, storing the state of the game.
@@ -10,7 +11,7 @@ import java.util.Random;
  * @author Grant Sackmann
  * @author Sarah Deschamps
  */
-public class Board {
+public class Board extends TimerTask {
 //  Fields
   /**
    * 2d array of chars encoding state of game for animation. Char States: 'E' - empty 'B' - body of
@@ -139,4 +140,9 @@ public class Board {
   public void lostGame() {
     isAlive = false;
   } // lostGame()
+
+  @Override
+  public void run() {
+    // nothing?
+  }
 } // Board Class

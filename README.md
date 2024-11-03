@@ -13,6 +13,7 @@ Instructions:
 * **Please add instructions for running the game**
 
 Acknowledgements:
+Some code for the graphics was taken from this repository: https://github.com/javacodingcommunity/Snake-Game-Java/tree/main
 
 Source:
 
